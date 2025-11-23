@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>الصفحة الرئسبة</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="web" openWeb>
+            <i class='bx bx-globe'></i>
+            <p>صفحة الويب</p>
+        </div>
+        <div class="mobile" openMobile>
+            <i class='bx bx-download'></i>
+            <p> تحميل التطبيق</p>
+        </div>
+    </div>
+
+
+</body>
+
+<script>
+    document.querySelector("[openWeb]").addEventListener("click", function () {
+        window.open("https://learningapp-1b8c6.web.app/", "_blank");
+    });
+    document.querySelector("[openMobile]").addEventListener("click", function () {
+        window.open("https://play.google.com/store/games?device=windows&pli=1", "_blank");
+    });
+
+</script>
+
+</html>
